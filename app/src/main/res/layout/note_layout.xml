@@ -1,0 +1,74 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/rec_item_userName"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rec_item_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/rec_item_userName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:text="You have reached 80% of AT_499_BDT" />
+
+        <TextView
+            android:id="@+id/rec_item_clock"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="45 min ago"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/onlineImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/rec_item_clock"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/request_accept_button"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/rec_item_phoneNumber"
+            android:layout_marginLeft="10dp"
+            android:text="Accept"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:textSize="8sp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/request_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/rec_item_phoneNumber"
+            android:layout_toRightOf="@id/request_accept_button"
+            android:layout_marginLeft="10dp"
+            android:text="Cancel"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
